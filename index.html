@@ -8,12 +8,69 @@
     <link rel="favicon" href="./media/hero.jfif">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./script/feather.js"> </script>
-
     <title>Law Firm Site</title>
 </head>
 <body>
+    <header>
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="top-contact">
+                <span >
+                    <i class="icon" data-feather="mail"></i>
+                    cohort5@azubiafrica.org
+                </span>
 
-    <i data-feather="menu"></i>
+                <span>
+                    <i class="icon" data-feather="phone"></i>
+                    +233 1234 56 79
+                </span>
+            </div>
+
+            <div class="button-links">
+                <div class="social-links">
+                   <a href="https://www.facebook.com" target="_blank"> 
+                        <i class="icon"  data-feather="facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="icon" data-feather="twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="icon" data-feather="instagram"></i>
+                    </a>
+                </div>
+                <button>Get a schedule</button>
+            </div>
+        </div>
+
+        <!-- menu bar -->
+         <div class="menu-bar">
+            <img src="./media/logo.png" alt="logo">
+             <!-- mobile navbar -->
+            <nav class="mobile-nav">
+                <i class="menu-icon" data-feather="menu"></i>
+                <!-- mobile nav liks -->
+                <div class="mobile-nav-links">
+                    
+                    <i class="close-nav" data-feather="x"></i>
+                    <ul >
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>                
+                </div>
+            </nav>
+
+            <!-- desktop navbar -->
+            <nav class="desktop-nav">
+                    <p>desktopnav</p>
+            </nav>
+         </div>
+    </header>
+
+    <!-- <i data-feather="menu"></i> -->
     
     <script>
         feather.replace();
