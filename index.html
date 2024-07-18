@@ -47,11 +47,11 @@
             <img src="./media/logo.png" alt="logo">
              <!-- mobile navbar -->
             <nav class="mobile-nav">
-                <i class="menu-icon" data-feather="menu"></i>
+                <i class="menu-icon" data-feather="menu" onclick="toggleMobileNav()" ></i>
                 <!-- mobile nav liks -->
-                <div class="mobile-nav-links">
+                <div class="mobile-nav-links hidden" >
                     
-                    <i class="close-nav" data-feather="x"></i>
+                    <i class="close-nav" data-feather="x" onclick="toggleMobileNav()"></i>
                     <ul >
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
@@ -65,7 +65,14 @@
 
             <!-- desktop navbar -->
             <nav class="desktop-nav">
-                    <p>desktopnav</p>
+                <ul >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
             </nav>
          </div>
     </header>
@@ -74,6 +81,9 @@
     
     <script>
         feather.replace();
+    </script>
+    <script src="./script/index.js">
+        
     </script>
 </body>
 </html>

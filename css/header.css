@@ -84,7 +84,7 @@ header{
     width: 30px;
 }
 
-.mobile-nav-links{
+.mobile-nav-links.active{
     background-color:  #000000b6;
     height: 100vh;
     width: 100vw;
@@ -99,6 +99,10 @@ header{
     padding: 20px;
 }
 
+.mobile-nav-links.hidden{
+    display: none;
+}
+
 .close-nav{
     position: relative;
     left: 100px;
@@ -110,6 +114,11 @@ header{
 
 .desktop-nav{
     display: none;
+}
+
+.desktop-nav ul{
+    display: flex;
+    gap: 20px;
 }
 
 .mobile-nav ul{
@@ -126,9 +135,11 @@ header{
     font-size: 18px;
     font-weight: 700;
 }
-.mobile-nav a{
+.mobile-nav a , .desktop-nav a{
     color: #000000;
 }
+
+
 
 @media screen and (min-width:834px){
     .top-bar{
@@ -140,6 +151,7 @@ header{
         display: none;
     }
     .desktop-nav{
+        padding: 0 30px;
         display: flex;
     }
 }
